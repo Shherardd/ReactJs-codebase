@@ -8,9 +8,33 @@ container.appendChild(element)*/
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const element = <h1>Hello World in react</h1>
-
+/*const jsx = <h1>Hello World!</h1>*/
+/*const element = React.createElement('h1', {}, 'children')
+const container = document.getElementById('app')*/
+const name = 'Gerard'
 const container = document.getElementById('app')
+/*const jsx = <h1>Hey {name}</h1>*/
+/*const element = React.createElement(
+    'h1',
+    {},
+    `Hey ${name}`
+)*/
 
 // ReactDOM.render(__que__, __donde__)
-ReactDOM.render(element, container)
+
+const jsx = (
+    <div>
+        <h1>Title</h1>
+        <p>Paragraph</p>
+    </div>
+)
+
+const el = React.createElement('div', {},
+    React.createElement('h1', {}, 'Title'),
+    React.createElement('p', {}, 'paragraph')
+)
+
+// jsx y el, representan lo mismo, donde Jsx es mas legible y expresivo.
+
+
+ReactDOM.render(jsx, container)
