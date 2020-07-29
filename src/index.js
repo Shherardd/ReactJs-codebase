@@ -7,6 +7,7 @@ container.appendChild(element)*/
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Badge from './components/badge'
 
 /*const jsx = <h1>Hello World!</h1>*/
 /*const element = React.createElement('h1', {}, 'children')
@@ -37,4 +38,4 @@ const el = React.createElement('div', {},
 // jsx y el, representan lo mismo, donde Jsx es mas legible y expresivo.
 
 
-ReactDOM.render(jsx, container)
+ReactDOM.render(<Badge/>, container)
