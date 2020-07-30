@@ -7,6 +7,8 @@ container.appendChild(element)*/
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'bootstrap/dist/css/bootstrap.css'
+import './components/styles/global.css'
 import Badge from './components/badge'
 
 /*const jsx = <h1>Hello World!</h1>*/
