@@ -40,4 +40,10 @@ const el = React.createElement('div', {},
 // jsx y el, representan lo mismo, donde Jsx es mas legible y expresivo.
 
 
-ReactDOM.render(<Badge/>, container)
+ReactDOM.render(<Badge 
+        firstName = "Gerard" 
+        lastName="Jonas" 
+        jobTitle="front-End Engineer" 
+        twitter="SherardJonas"
+        avatar = "https://www.gravatar.com/avatar?d=identicon"
+    />, container)
