@@ -19,3 +19,7 @@
   .Navbar__brand-logo {
     margin-right: 0.5rem;
   }
+
+  .Navbar__logo {
+      max-width: 5rem;
+  }
