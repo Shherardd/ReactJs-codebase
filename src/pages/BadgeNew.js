@@ -10,7 +10,14 @@ class BadgeNew extends React.Component {
             <div>
                 <Navbar/>
                 <div className="BadgeNew__hero">
-                    <img src={header} className="img-fluid" alt="logo"/>
+                    <img src={header} className="img-fluid Navbar__logo-hero" alt="logo"/>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <Badge firstName="Gerard" lastName="Jonas" twitter="SherardJonas" jobTitle="FullStack-Dev" avatar=""></Badge>
+                        </div>
+                    </div>
                 </div>
             </div>
             
