@@ -9,7 +9,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import './components/styles/global.css'
-import Badge from './components/badge'
+import BadgeNew from './pages/BadgeNew'
 
 /*const jsx = <h1>Hello World!</h1>*/
 /*const element = React.createElement('h1', {}, 'children')
@@ -40,10 +40,4 @@ const el = React.createElement('div', {},
 // jsx y el, representan lo mismo, donde Jsx es mas legible y expresivo.
 
 
-ReactDOM.render(<Badge 
-        firstName = "Gerard" 
-        lastName="Jonas" 
-        jobTitle="front-End Engineer" 
-        twitter="SherardJonas"
-        avatar = "https://www.gravatar.com/avatar?d=identicon"
-    />, container)
+ReactDOM.render(<BadgeNew/>, container)
