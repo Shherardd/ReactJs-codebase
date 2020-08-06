@@ -1,3 +1,8 @@
+/**     i know about anti-patters //  se de antipatrones
+ * All dead code is useful for me 
+ *  Todo el codigo muerto es util para mi
+ */
+
 /*const element = document.createElement('h1')
 element.innerText = 'Hello World'
 
@@ -14,28 +19,20 @@ import BadgeNew from './pages/BadgeNew'
 /*const jsx = <h1>Hello World!</h1>*/
 /*const element = React.createElement('h1', {}, 'children')
 const container = document.getElementById('app')*/
-const name = 'Gerard'
 const container = document.getElementById('app')
-/*const jsx = <h1>Hey {name}</h1>*/
-/*const element = React.createElement(
-    'h1',
-    {},
-    `Hey ${name}`
-)*/
 
 // ReactDOM.render(__que__, __donde__)
-
-const jsx = (
+/*const jsx = (
     <div>
         <h1>Title</h1>
         <p>Paragraph</p>
     </div>
-)
+)*/
 
-const el = React.createElement('div', {},
+/*const el = React.createElement('div', {},
     React.createElement('h1', {}, 'Title'),
     React.createElement('p', {}, 'paragraph')
-)
+)*/
 
 // jsx y el, representan lo mismo, donde Jsx es mas legible y expresivo.
 
