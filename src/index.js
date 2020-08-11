@@ -13,6 +13,8 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import './components/styles/global.css'
 import BadgeNew from './pages/BadgeNew'
+import Page from './pages/page'
+
 
 /*const jsx = <h1>Hello World!</h1>*/
 /*const element = React.createElement('h1', {}, 'children')
