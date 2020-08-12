@@ -5,9 +5,7 @@
 
 /*const element = document.createElement('h1')
 element.innerText = 'Hello World'
-
 const container = document.getElementById('app')
-
 container.appendChild(element)*/
 
 import React from 'react'
@@ -15,6 +13,8 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import './components/styles/global.css'
 import BadgeNew from './pages/BadgeNew'
+import Page from './pages/page'
+
 
 /*const jsx = <h1>Hello World!</h1>*/
 /*const element = React.createElement('h1', {}, 'children')
@@ -33,8 +33,6 @@ const container = document.getElementById('app')
     React.createElement('h1', {}, 'Title'),
     React.createElement('p', {}, 'paragraph')
 )*/
-
 // jsx y el, representan lo mismo, donde Jsx es mas legible y expresivo.
-
 
 ReactDOM.render(<BadgeNew/>, container)
