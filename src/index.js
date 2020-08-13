@@ -13,7 +13,7 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import './components/styles/global.css'
 import BadgeNew from './pages/BadgeNew'
-import Page from './pages/page'
+import Badges from './pages/badges'
 
 
 /*const jsx = <h1>Hello World!</h1>*/
@@ -35,4 +35,4 @@ const container = document.getElementById('app')
 )*/
 // jsx y el, representan lo mismo, donde Jsx es mas legible y expresivo.
 
-ReactDOM.render(<BadgeNew/>, container)
+ReactDOM.render(<Badges/>, container)
