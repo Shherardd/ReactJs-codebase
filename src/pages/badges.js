@@ -19,7 +19,7 @@ class Badges extends React.Component {
     componentDidMount() {
         // component did mount ocurre en tercer lugar
 
-        setTimeout(() => {
+        this.timeoutId = setTimeout(() => {
             this.setState({
                 data: [
                     {
@@ -52,6 +52,14 @@ class Badges extends React.Component {
                   ]
             })
         }, 3000)
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.timeoutId)
     }
     render() {
         //render ocurre segundo
