@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import api from '../api'
 import './styles/Badges.css'
 import logo from '../images/logo.png'
-import Badge from '../components/badge'
+import PageLoading from '../components/PageLoading'
+import PageError from '../components/PageError'
 import BadgesList from '../components/badgesList'
 
 class Badges extends React.Component {
@@ -57,10 +58,10 @@ class Badges extends React.Component {
     render() {
         //render ocurre segundo
         if(this.state.loading === true) {
-            return 'Loading...'
+            return <PageLoading />
         }
         if (this.state.error) {
-            return `Ha habido un error: ${this.state.error.message}`
+            return <PageError error={this.state.error}/>
         }
 
         return (
