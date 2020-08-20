@@ -5,15 +5,20 @@ import Navbar from '../components/Navbar'
 import './styles/BadgeNew.css'
 import header from '../images/logo.png'
 import api from '../api'
-
+import PageLoading from '../components/PageLoading';
+import PageError from '../components/PageError';
 class BadgeNew extends React.Component {
-    state = {form: {
-        firstName: '',
-        lastName: '',
-        email: '',
-        jobTitle: '',
-        twitter: ''
-    }}
+    state = {
+        loading: false,
+        error: null,
+        form: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            jobTitle: '',
+            twitter: ''
+        }
+    }
 
     handleSubmit = async (e) => {
         e.preventDefault()
@@ -21,6 +26,8 @@ class BadgeNew extends React.Component {
         try {
             await api.badges.create(this.state.form)
             this.setState({loading:false})
+            //this.props.history.push('/badges')
+            // dentro de props -> Match, history, location
             this.props.history.push('/badges')
         } catch (error) {
             this.setState({loading:false, error})
@@ -36,6 +43,11 @@ class BadgeNew extends React.Component {
         })
     }
     render() {
+        if (this.state.loading) {
+            return(
+                <PageLoading/>
+            )
+        }
         return (
             <div>
                 <div className="BadgeNew__hero">
@@ -56,7 +68,9 @@ class BadgeNew extends React.Component {
                             <BadgeForm 
                             onChange={this.handleChange} 
                             onSubmit={this.handleSubmit}
-                            formValues={this.state.form}/>
+                            formValues={this.state.form}
+                            error={this.state.error}
+                            />
                         </div>
                     </div>
                 </div>
