@@ -19,7 +19,7 @@ class BadgesList extends React.Component {
                 return(
                    <li key={badge.id} className="BadgesListItem">
                       <Gravatar email={badge.email} />
-                   <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/edit`}>
+                   <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}`}>
                         <div>
                            <div><strong>{badge.firstName} {badge.lastName}</strong></div>
                            <div className="Twitter__name">
