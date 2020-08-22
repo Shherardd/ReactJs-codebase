@@ -1,9 +1,9 @@
 import React from 'react'
-import { render } from 'react-dom'
 import {Link} from 'react-router-dom'
 import shdLogo from '../images/logo.png'
 import './styles/BadgeDetails.css'
 import Badge from '../components/badge'
+import DeleteBadgeModal from '../components/DeleteBadgeModal'
 
 function BadgeDetails (props) {
     
@@ -40,7 +40,8 @@ function BadgeDetails (props) {
                             <Link to={`/badges/${props.id}/edit`} className="btn btn-primary mb-4">Edit</Link>
                         </div>
                         <div>
-                            <button className="btn btn-danger">Delete</button>
+                            <button onClick={props.onOpenModal} className="btn btn-danger">Delete</button>
+                            <DeleteBadgeModal modalIsOpen={props.modalIsOpen} onCloseModal={props.onCloseModal} onDeleteBadge={props.onDeleteBadge}> Lorem Ipsum</DeleteBadgeModal>
                         </div>
                     </div>
                 </div>

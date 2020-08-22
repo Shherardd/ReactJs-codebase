@@ -1,12 +1,10 @@
 import React from 'react'
 import Badge from '../components/badge'
-import BadgeForm from "../components/BadgeForm";
-import Navbar from '../components/Navbar'
+import BadgeForm from "../components/BadgeForm"
 import './styles/BadgeNew.css'
 import header from '../images/logo.png'
 import api from '../api'
-import PageLoading from '../components/PageLoading';
-import PageError from '../components/PageError';
+import PageLoading from '../components/PageLoading'
 class BadgeNew extends React.Component {
     state = {
         loading: false,
