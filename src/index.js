@@ -1,6 +1,6 @@
-/**     i know about anti-patterns //  se de antipatrones
- * All dead code is useful for me 
- *  Todo el codigo muerto es util para mi (solo en mi repo)
+/**     i know, i know... anti-patterns
+ * All dead code in my repo is useful for me.  xoxo
+ *  - Gerardo L. P.  
  */
 
 /*const element = document.createElement('h1')
